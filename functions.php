@@ -28,6 +28,8 @@ function theme_js()
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
+
 
 function register_theme_menus()
 {
@@ -57,6 +59,8 @@ function create_widget($name, $id, $description)
 create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the front page' );
 create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the front page' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the front page' );
+create_widget( 'Page Sidebar', 'page', 'Displays in the sidebar' );
+create_widget( 'Blog Sidebar', 'blog', 'Displays in the sidebar of the blog page' );
 
 
 
